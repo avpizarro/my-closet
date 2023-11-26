@@ -5,6 +5,8 @@ import { Canvas } from '@react-three/fiber';
 import styles from './Outfit.module.css';
 import Floor from '../Floor'
 import Box from '../Box';
+import LightBulb from "../LightBulb";
+import OrbitControls from '../OrbitControls';
 
 extend(THREE)
 function Outfit() {
@@ -20,7 +22,9 @@ return (
       }}
       >
         <ambientLight color={"white"} intensity={0.3} />
+        <LightBulb position={[0, 3, 0]} />
         <Box rotateX={3} rotateY={0.2} />
+        <OrbitControls />
         <Floor position={[0, -1, 0]}/>
       </Canvas>
     </div>
