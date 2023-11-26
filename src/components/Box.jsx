@@ -1,7 +1,6 @@
 import * as THREE from "three";
-import { extend } from "@react-three/fiber";
 
-extend(THREE);
+// Create a Box
 function Box(props) {
   return (
     <mesh {...props} receiveShadow={true} castShadow>

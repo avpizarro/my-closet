@@ -3,6 +3,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 extend({ OrbitControls });
 
+// Add controls to manipulate your scene
 function Controls(props) {
   const { camera, gl } = useThree();
   return (

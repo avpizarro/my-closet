@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+// Create a floor for our scene that changes
+// colour when hovered
 function Floor(props) {
   const [hovered, setHover] = useState(false)
   return (

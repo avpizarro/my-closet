@@ -1,3 +1,4 @@
+// Add lighting
 function LightBulb(props) {
   return (
     <mesh {...props}>
